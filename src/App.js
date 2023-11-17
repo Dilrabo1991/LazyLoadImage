@@ -3,6 +3,8 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import ReactPlayer from 'react-player';
 import HeadBodyGrid from './components/ContentLoaderComponent';
+import AllCompoentLoader from './components/AllCompoentLoader';
+import HistoriesLoader from './components/video';
 
 
 const App = () => {
@@ -46,9 +48,12 @@ const App = () => {
         placeholderSrc={defaultPlaseholder.src}
         src={defaultPlaseholder.src}
         width={img.width} />
+      {/* 
+      <HeadBodyGrid>
 
-      <ReactPlayer url="https://www.youtube.com/watch?v=ysz5S6PUM-U" />
-      <HeadBodyGrid />
+      </HeadBodyGrid> */}
+      <AllCompoentLoader />
+      <HistoriesLoader />
     </div>
 
     // default img //! placeholderSrc={defaultPlaseholder.src} 
